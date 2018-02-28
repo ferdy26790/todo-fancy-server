@@ -12,7 +12,7 @@ var users = require('./routes/users');
 var mongoose = require('mongoose');
 require('dotenv').config()
 const todoModel = require('./models/todo')
-mongoose.connect('mongodb://bendereakunin:d4gd1gdug@ferdy-shard-00-00-8gzpw.mongodb.net:27017,ferdy-shard-00-01-8gzpw.mongodb.net:27017,ferdy-shard-00-02-8gzpw.mongodb.net:27017/admin?replicaSet=Ferdy-shard-0&ssl=true');
+mongoose.connect('mongodb://admin:admin@ds251598.mlab.com:51598/todofancy');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
